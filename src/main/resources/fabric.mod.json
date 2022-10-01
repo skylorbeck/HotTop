@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "hottop",
+  "version": "${version}",
+  "name": "HotTop",
+  "description": "Puts the Hotbar, at the top",
+  "authors": [
+    "SkylorBeck",
+    "Patrons"
+  ],
+  "contact": {
+    "website": "https://www.skylorbeck.website"
+  },
+  "license": "MIT",
+  "icon": "assets/HotTop/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "website.skylorbeck.minecraft.hottop.client.HotTopClient"
+    ],
+    "main": [
+      "website.skylorbeck.minecraft.hottop.HotTop"
+    ]
+  },
+  "mixins": [
+    "HotTop.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
